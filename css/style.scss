@@ -1,0 +1,1243 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+}
+input[type="file"] {
+    display: none;
+}
+// #region FONTS-FACE
+@font-face {
+    font-family: Monserat_ex_Bold;
+    src: url(../fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Monserat_Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Monserat_Medum;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Monserat_lght;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+// #endregion
+
+// #region boshka
+
+%headlne_1{
+    font-family: Monserat_ex_Bold;
+    font-size: 48px;
+    line-height: 64px;
+}
+%headlne_2{
+    font-family: Monserat_ex_Bold;
+    font-size: 40px;
+    line-height: 54px;
+}
+%headlne_3{
+    font-family: Monserat_ex_Bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+%headlne_4{
+    font-family: Monserat_Medum;
+    font-size: 18px;
+    line-height: 28px;
+}
+%headlne_5{
+    font-family: Monserat_Bold;
+    font-size: 14px;
+    line-height: 20px;
+}
+%headlne_6{
+    font-family: Monserat_lght;
+    font-size: 16px;
+    line-height: 26px;
+}
+%headlne_7{
+    font-family: Monserat_lght;
+    font-size: 14px;
+    line-height: 22px;
+}
+// #endregion
+
+/*цвета*/
+    $text: #402940;
+    $brown_text: #847264;
+    $back_ground_specal_color: #C0712E;
+    $button_pas:white;
+    $but_active:#402940;
+
+
+// #region mixins
+    @mixin box($width,$height){
+        width: $width;
+        height: $height;
+    }
+    @mixin button($bg-color, $text) {
+    width: 130px;
+    height:44px ;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-color;
+    color: $text;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    @extend %headlne_5;
+
+    &:hover {
+    background-color: rgba(white, 0.5);
+    }
+
+    &:active {
+    background-color: rgba($but_active, 0.25);
+    }
+}
+// #endregion
+
+// #region header
+header{
+    @include box(1280px,75px );
+    padding-left: 160px;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/1/wall.png);
+}
+.header_logo{
+    @include box(120px,40px);
+    @extend %headlne_3;
+    color: $text;
+    display: flex;
+    margin-top: -4px;
+
+}
+.header_logo_k{
+    color: $brown_text;
+}
+a{
+    white-space: nowrap;
+}
+.nav{
+    display: flex;
+    margin-left: 42px;
+    @extend %headlne_5;
+    color: $text;
+    width: 375px;
+    margin-top: -2px;
+}
+.nav__1{
+    width: 45px;
+    
+}
+.nav__2{
+    margin-left: 29px;
+}
+.nav__3{
+    margin-left: 5px;
+}
+.nav__4{
+    margin-left: 28px;
+}
+.header_button{
+    @include button($brown_text,$text);
+    margin-left: 463px;
+}
+
+.header_img{
+
+}
+    // #endregion
+
+// #region main
+main{
+    padding-left: 160px;
+    width: 1280px;
+}
+
+// #region part 1
+.mg_1{
+    width: 640px;
+    height: 659px;
+    margin-left: 640px;
+    z-index: 1;
+    position: relative;
+}
+.page-1{
+    @include box(1120px,700px );
+    display: flex;
+    margin-top: -594px;
+}
+.page-1_infa{
+    @include box(544px,291px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 232px;
+}
+.page-1_zagolovok{
+    width: 544px;
+    color: $text;
+    @extend %headlne_1;
+    margin-bottom: 23px;
+}
+.page-1_infa2{
+    width: 544px;
+    @extend %headlne_4;
+    color: $text;
+    margin-bottom: 32px;
+}
+.page-1_buttom{
+    @include button($brown_text,$text);
+    width: 136px;
+}
+.page-1__img{
+    width: 544px;
+    height: 700px;
+    margin-left: 32px;
+    z-index: 2;
+    position: relative;
+}
+//#endregion
+
+// #region part 2
+.page-2{
+    margin-top: 96px;
+    @include box(1120px,1190px);
+    }
+.page-2_name{
+    display: flex;
+    justify-content: center;
+    @extend %headlne_2;
+    color: $text;
+    max-width: 100%;
+    }
+.page-2_slow{
+    display: flex;
+    margin-top: 64px;
+    max-width: 100%;
+
+}
+.page-2__carta{
+    background-image: url(../img/2/card\ \(1\).png);
+    @include box(410px,520px );
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -18px;
+}
+.page-2__topic{
+    color: $text;
+    @extend %headlne_4;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 336px;
+    margin-left: -20px;
+}
+.page-2__but{
+    @include button($brown_text,$text);
+    width: 136px;
+    margin-top: 31px;
+    margin-left: -23px;
+}
+.page_2__carta2{
+    @extend .page-2__carta;
+    margin-left: -27px;
+}
+.page-2_2{
+    @extend .page-2_slow;
+    margin-top: -19px;
+}
+// #endregion
+
+// #region part 3
+.page-3{
+    @include box(1120px,499px);
+    margin-top: -3px;
+}
+.page-3_name{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $text;
+    @extend %headlne_2;
+}
+.page-3__gallery{  
+    display: flex;
+    // width: 1120px;
+}
+.page-3_carta{
+    background-image: url(../img/3/heart.png);
+    @include box(450px,430px );
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -51px;
+}
+.carta_headings{
+    @extend %headlne_4;
+    color: $text;
+    width: 236px;
+    display: flex;
+    justify-content: center;
+    margin-top: 198px;
+    margin-left: 3px;
+    margin-bottom: 45px;
+}
+.carta_text{
+    @extend %headlne_6;
+    color: $text;
+    width: 288px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 4px;
+}
+.carta_box{
+    @extend .page-3_carta;
+    margin-top: 51px;
+    background-image: url(../img/3/heart.png);
+    margin-left: -66px;
+}
+.page-3_box{
+    width: 300px;
+    margin-top: 201px;
+}
+.page-3_carta__box{
+    @extend %headlne_6;
+    color: $text;
+    width: 288px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 4px;
+}
+.carta_grass{
+    @extend .page-3_carta;
+    background-image: url(../img/3/trava.png);
+    margin-top: 20px;
+    margin-left: -66px;
+}
+.gr_z{
+    margin-top: 200px;
+    margin-left: -8px;
+}
+.gr{
+    margin-top: -13px;
+    margin-left: 3px;
+}
+//#endregion
+
+// #region part 4
+.page-4{
+    background-image: url(../img/4/Rectangle\ 10.png);
+    margin-top: 139px;
+    @include box(1120px,146px);
+}
+.page-4_name{
+    display: flex;
+    width: 1120px;
+}
+.page-4_text{
+    display: flex;
+    align-items: center;
+}
+.page-4_text1{
+    @include box(91px,83px );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 134px;
+    margin-top: 33px;
+}
+.page-4_num{
+    color: $brown_text;
+    @extend %headlne_3;
+    display: flex;
+    width: 91px;
+    justify-content: center;
+}
+.page-4_year{
+    @extend %headlne_6;
+    color: $text;
+    margin-top: 15px;
+    margin-left: 1px;
+    width: 91px;
+}
+.page-4_text2{
+    @include box(187px,83px );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 39px;
+    margin-left: 235px;
+}
+.page-4_num2{
+    width: 187px;
+    color: $brown_text;
+    @extend %headlne_3;
+    display: flex;
+    justify-content: center;
+
+}
+.page-4_prodano,.page-4_client{
+    @extend %headlne_6;
+    color: $text;
+}
+.page-4_text3{
+    @include box(172px,83px );
+    margin-left: 230px;
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page-4_num3{
+    width: 172px;
+    color: $brown_text;
+    @extend %headlne_3;
+    display: flex;
+    justify-content: center;
+}
+.page-4_client{
+    width: 172px;
+}
+
+
+
+
+
+//#endregion
+
+// #region part 5
+
+.page-5{
+    margin-left: -160px;
+    background-image: url(../img/icon1/CTA\ \(photo\).png);
+    margin-top: 96px;
+    width: 1440px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+.page-5_name{
+    @extend %headlne_3;
+    color: $text;
+    padding-top: 51.72px;
+    margin-left: 740px;
+    margin-bottom: 32px;
+}
+.page-5_Yourname{
+    @include box(528px,59.75px);
+    background-color: rgba(white, 0.5);
+    border: none;
+    margin-left: 762px;
+    padding-left: 14px;
+
+    &::placeholder{
+    @extend %headlne_7;
+    color: $text;
+    }
+}
+.two-5{
+    margin-top: 24px;
+}
+.upload-5 {
+    width: 518px;
+    height: 54px;
+    display: inline-block;
+    cursor: pointer;
+    background-color:rgba(white, 0.5);
+    color: $text;
+    @extend %headlne_7;
+    margin-left: 762px;
+    margin-top: 32px;
+}
+.page-5_up{
+    margin-top: 20px;
+    
+}
+.page-5_img{
+    margin-top: 21px;
+    margin-left: 15px;
+    margin-right: 7px;
+    width:14px;
+    height:14px;
+}
+.page-5_but{
+    @include button($brown_text,$text);
+    width: 106px;
+    margin-top: 32px;
+    margin-left: 760px;
+}
+
+//#endregion
+
+// #region part 6
+.page-6{
+    width: 1119px;
+}
+.page-6_name{
+    color: $text;
+    @extend %headlne_3;
+    display: flex;
+    justify-content: center;
+    width: 1140px;
+    margin-top: 93px;
+}
+.page-6_spisok{
+    display: flex;
+}
+.page-6_spisok1{
+    background-image: url(../img/icon2/card1.png);
+    width: 264px;
+    display: flex;
+    flex-direction: column;
+    height: 345px;
+    margin-top: 19px;
+    align-items: center;
+}
+.page-6_zakaz{
+    width: 192px;
+    height: 28px;
+    color: $text;
+    @extend %headlne_4;
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+.page-6_zakaz2{
+    width: 192px;
+    height: 78px;
+    color: $text;
+    @extend %headlne_6;
+    display: flex;
+    text-align: center;
+    margin-top: 17px;
+}
+.page-6_spisok2{
+    @extend .page-6_spisok1;
+    background-image: url(../img/icon2/card2.png);
+    margin-left: 21px;
+}
+.page-6_spisok3{
+    @extend .page-6_spisok1;
+    margin-left: 21px;
+    background-image: url(../img/icon2/card3.png);
+
+}
+.page-6_spisok4{
+    @extend .page-6_spisok1;
+    margin-left: 21px;
+    background-image: url(../img/icon2/card4.png);
+
+}
+.continue-6{
+    margin-top: 18px;
+}
+//#endregion
+
+// #region part 7
+.page-7_name{
+    width: 1120px;
+    display: flex;
+    justify-content: center;
+    @extend %headlne_3;
+    color: $text;
+    margin-top: 79px;
+}
+.page-7_spisok{
+    display: flex;
+    margin-top: 20px;
+}
+.page-7_spisok1{
+    background-image: url(../img/7/card\ 4.png);
+    width: 380px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    margin-left: -100px;
+}
+.page-7_spisok2{
+    display: flex;
+    width: 310px;
+    margin-top: 150px;
+    color: #280901;
+    justify-content: center;
+    text-align: center;
+    margin-left: 65px;
+    @extend %headlne_6;
+}
+.page-7_people{
+    color: $text;
+    @extend %headlne_4;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    margin-top: 71px;
+}
+.two-7{
+    margin-left: 32px;
+}
+//#endregion
+
+// #region part 8
+.page-8 {
+    margin-left: -160px;
+    background-image: url(../img/8/CTA\ \(choose\).png);
+    width: 1440px;
+    height: 350px;
+    margin-top: 76px;
+    padding-top: 364px;
+    }
+.page-8_zagolovok1{
+    color: $text;
+    @extend %headlne_3;
+    margin-left: 160px;
+    margin-top: -290px;
+    }
+.page-8_zagolovok2{
+    color: $text;
+    @extend %headlne_3;
+    margin-left: 160px;
+
+    }
+.page-8__slow{
+    display: flex;
+    flex-direction: column;
+    }
+.page-8_zakaz{
+    color: $text;
+    @extend %headlne_4;
+    margin-top: 32px;
+    margin-left: 160px;
+    }
+.page-8_Name,.page-8_Number{
+    @extend .page-5_Yourname;
+    margin-left: 160px;
+    margin-top: 32px;
+    }
+.page-8_Number{
+    margin-top: 32px;
+    }
+.four-8{
+    padding-top: 5px;
+    }
+ .choice {
+    position: relative;
+    width: 544px;      /* Ширина должна совпадать с шириной селекта */
+    margin-left: 160px;
+    margin-top: 23px;
+    height: 62px;
+}
+
+.The_main_choice {
+  width: 100%;       
+  padding: 12px 16px;
+  @extend %headlne_7;
+  color: $text;
+  background-color: white;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.The_black_Arrow{
+  position: absolute;
+  top: 50%;
+  right: 20px;       
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 5px solid #000000; 
+  pointer-events: none;
+}
+
+.The_main_choice option {
+    background-color: #402940;
+    color: #000; 
+}
+.page-8_but{
+    @include button($brown_text, $text);
+    margin-left: 160px;
+    margin-top: 32px;
+    width: 106px;
+}
+//#endregion
+
+// #region part 9
+.page-9_name{
+    @extend %headlne_2;
+    color: $text;
+    margin-left: 455px;
+    margin-top: 147px;
+}
+.page-9_slow{
+    @extend .page-2_slow;
+}
+.page-9_carta1{
+    @extend .page-2__carta;
+}
+.page-9_carta_text{
+    @extend %headlne_4;
+    color: #280901;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 319px;
+    margin-left: -20px;
+    text-align: center;
+    width: 300px;
+}
+.page-9_but{
+    @extend .page-2__but;
+    margin-top: 19px;
+}
+.page-9_carta2{
+    @extend .page-2__carta2;
+}
+//#endregion
+
+// #region part 10
+.page-10{
+    background-image: url(../img/10/Contact\ Details\ \(1\).png);
+    margin-left: -160px;
+    width: 1440px;
+    height: 537.26px;
+    margin-top: 47px;
+    padding-top: 127px
+}
+.page-10_zagolovok1,.page-10_zagolovok2,.page-10_zagolovok3{
+    @extend %headlne_3;
+    width: 376px;
+    margin-left: 160px;
+    color: $text;
+}
+.page-10_zagolovok1{
+    // margin-top: 120px;
+}
+.page-10_zagolovok2{
+    margin-top: 31px;
+
+}
+.page-10_zagolovok3{
+    margin-top: 30px;
+
+}
+.page-10_text1,.page-10_text2,.page-10_text3{
+    @extend %headlne_6;
+    color: $text;
+    width: 376px;
+    margin-left: 160px;
+    margin-bottom: -20px;
+}
+.page-10_text1{
+    margin-top: 33px;
+}
+.page-10_text2{
+    margin-top: 34px;
+    width: 144px;
+}
+.page-10_text3{
+    margin-top: 33px;
+}
+.page-10_img{
+    width: 128px;
+    margin-left: 160px;
+    margin-top: 30px;
+}
+//#endregion
+
+// #region part 11
+.page-11{
+    background-image: url(../img/11/Frame\ 16.png);
+    width: 1070px;
+    height: 263px;
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    margin-bottom: 95px;
+}
+.page-11_name{
+    width: 255px;
+    height: 40px;
+    color: #FFFFFF;
+    @extend %headlne_3;
+}
+.page-11_description{
+    color: #FFFFFF;
+    @extend %headlne_4;
+    display: flex;
+    text-align: center;
+    margin-top: 18px;
+    width: 400px;
+}
+.page-11_but{
+    @include button(#FFFFFF,$text);
+    width: 120px;
+    margin-top: 18px;
+}
+//#endregion
+
+//#endregion
+
+// #region footer
+footer{
+    background-color: rgba(#DCDCDB, 0.1);
+    width: 1440px;
+    height: 309px;
+    padding-top: 103px;
+    display: flex;
+    gap: 12px;
+}
+.foter_part1{
+    margin-left: 160px;
+    width: 219px;
+}
+.page-footer_text{
+    width: 269px;
+    margin-top: 14px;
+    @extend %headlne_7;
+}
+.foter_g2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 253px;
+    height: 146px;
+    margin-left: 73px;
+    margin-top: 2px;
+}
+.page-footer_zagolovok{
+    width: 170px;
+    @extend %headlne_5;
+    color: $text;
+}
+.page-footer_text1{
+    width: 150px;
+    @extend %headlne_7;
+    color: $text;
+    margin-top: 28px;
+}
+.page-footer_text2{
+    width: 150px;
+    margin-top: 16px;
+    @extend %headlne_7;
+    color: $text;
+}
+.page-footer_text3{
+    width: 150px;
+    margin-top: 15px;
+    @extend %headlne_7;
+    color: $text;
+}
+.footer_two{
+    margin-left: 117px;
+}
+.footer_social-network{
+    color: $text;
+    @extend %headlne_5;
+    margin-top: 2px;
+    margin-left: 118px;
+}
+.footer_emoji{
+    display: flex;
+    flex-direction: column;
+}
+.footer_img{
+    margin-top: 27px;
+    margin-left: 117px;
+    width: 131px;
+    height: 32px;
+}
+.footer_rights{
+    background-color: rgba(#DCDCDB, 0.5);
+    width: 1440px;
+    height: 70px;
+    margin-top: 98px;
+    @extend %headlne_7;
+    color: $text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-footer2{
+    display: flex;
+}
+.page-footer{
+    display: flex;
+    flex-direction: column;
+}
+// #endregion
+
+// #region media screan
+
+ @media (max-width: 390px){
+*{
+    width: 390px;
+}
+// #region h
+header{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    padding-left: 0;
+    align-items: center;
+    width: 390px;
+    background-color: rgba(#C0712E, 0.1);
+}
+.header_logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.header_logo_k{
+    width: 22px;
+}
+.nav{
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+.header_button{
+    margin-left: 0;
+}
+// #endregion
+// #region main
+main{
+    padding-left: 0px;
+    width: 390px;
+}
+// #region 1
+.mg_1{
+    width: 390px;
+    display: flex;
+    text-align: center;
+    margin-left: 0;
+}
+
+.page-1{
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+}
+.page-1_infa{
+    width: 390px;
+    margin-top: 0px;
+    display: flex;
+    text-align: center;
+    height: 370px;
+    z-index: 2;
+}
+.page-1_zagolovok{
+    width: 390px;
+}
+.page-1_infa2{
+    text-align: center;
+    width: 390px;
+}
+.page-1_buttom{
+    width: 130px;
+    margin-left: 130px;
+}
+.page-1__img{
+    margin-top: -433px;
+    z-index: 0;
+    width: 390px;
+    margin-left: 0;
+    height: 531px;
+    opacity: 0.8;
+}
+// #endregion
+// #region 2
+.page-2{
+    width: 390px;
+    margin-top: -238px;
+ }
+.page-2_name{
+    text-align: center;
+}
+.page-2_slow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.page-2__carta,.page-2__topic,.page-2__carta2,.page-2__carta,.page-2__carta2{
+    width: 390px;
+ }
+ .page-2_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+// #endregion
+// #region 3
+.page-3{
+    margin-top: 2080px;
+    width: 390px;
+    height: 1200px;
+}
+.page-3__gallery{
+    display: flex;
+    flex-direction: column;
+ }
+ .page-3_carta,.carta_box,.carta_grass{
+    width: 390px;
+ }
+ .carta_headings{
+    width: 390px;
+    display: flex;
+    text-align: center;
+    margin-left: 0;
+    justify-content: center;
+    margin-left: 34px;
+ }
+.carta_text{
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+}
+.page-3_box{
+    width: 390px;
+    display: flex;
+    margin-left: 50px;
+}
+.page-3_carta__box{
+    width: 288px;
+    margin-left: 59px;
+}
+.gr_z{
+    margin-left: 55px;
+}
+.gr{
+    margin-left: 60px;
+}
+// #endregion
+// #region 4
+
+.page-4{
+    margin-top: 235px;
+    width: 390px;
+    height: 147px;
+}
+.page-4_name{
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+}
+.page-4_text1,.page-4_text2,.page-4_text3{
+    margin-left: 0;
+}
+.page-4_text1{
+    margin-top: 20px;
+}
+.page-4_text2{
+    margin-top: -70px;
+    margin-left: 90px;
+}
+.page-4_text3{
+    margin-top: -99px;
+    margin-left: 210px;
+}
+.page-4_prodano{
+    width: 220px;
+}
+
+// #endregion
+// #region 5
+.page-5{
+    width: 390px;
+    box-sizing: border-box;
+    margin-top: 34px;
+    margin-left: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)),url(../mg/prt5/Group\ 13.png);
+    height: 559px;
+}
+.page-5_name{
+    margin-left: 6px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    width: 384px;
+}
+.page-5_Yourname{
+    margin-left: 0;
+    width: 375px;
+}
+.upload-5{
+    margin-left: 0;
+    width: 390px;
+ }
+.page-5_but{
+    margin-left: 25px;
+ }
+// #endregion
+// #region 6
+.page-6{
+    width: 390px;
+    margin-top: -72px;
+ }
+.page-6_name{
+    width: 390px;
+    /* display: flex; */
+    text-align: center;
+}
+.page-6_spisok{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-6_spisok2,.page-6_spisok3,.page-6_spisok4{
+    margin-top: 0;
+    margin-left: 0;
+}
+// #endregion
+// #region 7
+.page-7_name{
+    width: 390px;
+    text-align: center;
+    margin-left: 0;
+    margin-top: -50px;
+}
+.page-7_people{
+    width: 380px;
+  }
+.page-7_spisok{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.two-7{
+    margin-left: 0;
+}
+.page-7_spisok1   {
+    height: 434px;
+}
+
+
+// #endregion
+// #region 8
+
+.page-8{
+    margin-left: 0;
+    margin-top: 0px;
+    width: 390px;
+    padding-top: 350px;
+ }
+.page-8_zagolovok1,.page-8_zagolovok2{
+    margin-left: 0;
+    text-align: center;
+}
+.page-8_zakaz{
+    margin-left: 0;
+    width: 390px;
+    text-align: center;
+    margin-top: 0;
+}
+.choice{
+    margin-left: 0;
+    width: 390px;
+}
+.page-8_but{
+    margin-left: 137px;
+    margin-top: 10px;
+}
+// #endregion
+// #region 9
+.page-9_name{
+    margin-left: 0;
+    text-align: center;
+
+}
+// #endregion
+// #region 10
+.page-10{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+    width: 390px;
+}
+.page-10_zagolovok1, .page-10_zagolovok2, .page-10_zagolovok3 {
+    width: 376px;
+    margin-left: 0px;
+    color: #280901;
+}
+.page-10_text1,.page-10_text2,.page-10_text3{
+    text-align: center;
+    width: 390px;
+    margin-left: 0px;
+}
+.page-10_img{
+    margin-left: 115px;
+}
+// #endregion
+// #region 11
+.page-11,.page-11_description{
+    width: 390px;
+ }
+.page-11{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+// #endregion
+// #endregion
+// #region h
+footer{
+    width: 390px;
+    padding-top: 40px;
+    height: 665px;
+}
+.foter_part1{
+    width: 390px;
+    margin-left: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-footerN2{    width: 390px;
+    margin-left: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;}
+.page-footer_text1,.page-footer_text2,.page-footer_text3{
+    margin-top: 10px;}
+
+    .page-footer2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-footer_text{
+        margin-top: -20px;
+    }
+    .footer_social-network{
+        margin-left: 0;
+        text-align: center;
+    }
+    .footer_img{
+        margin-left: 130px;
+    }
+    .footer_rights{
+        width: 390px;
+    }
+}

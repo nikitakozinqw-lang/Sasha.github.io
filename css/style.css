@@ -1,0 +1,1285 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  width: 1440px;
+}
+
+input[type=file] {
+  display: none;
+}
+
+@font-face {
+  font-family: Monserat_ex_Bold;
+  src: url(../fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Monserat_Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Monserat_Medum;
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Monserat_lght;
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+.page-1_zagolovok {
+  font-family: Monserat_ex_Bold;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.page-9_name, .page-3_name, .page-2_name {
+  font-family: Monserat_ex_Bold;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+.page-11_name, .page-10_zagolovok1, .page-10_zagolovok2, .page-10_zagolovok3, .page-8_zagolovok2, .page-8_zagolovok1, .page-7_name, .page-6_name, .page-5_name, .page-4_num3, .page-4_num2, .page-4_num, .header_logo {
+  font-family: Monserat_ex_Bold;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.page-11_description, .page-9_carta_text, .page-8_zakaz, .page-7_people, .page-6_zakaz, .carta_headings, .page-2__topic, .page-1_infa2 {
+  font-family: Monserat_Medum;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.footer_social-network, .page-footer_zagolovok, .page-11_but, .page-8_but, .page-5_but, .page-2__but, .page-9_but, .page-1_buttom, .header_button, .nav { /*кнопка*/
+  font-family: Monserat_Bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.page-10_text1, .page-10_text2, .page-10_text3, .page-7_spisok2, .page-6_zakaz2, .page-4_prodano, .page-4_client, .page-4_year, .page-3_carta__box, .carta_text {
+  font-family: Monserat_lght;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.page-5_Yourname::-moz-placeholder, .page-8_Name::-moz-placeholder, .page-8_Number::-moz-placeholder {
+  font-family: Monserat_lght;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer_rights, .page-footer_text3, .page-footer_text2, .page-footer_text1, .page-footer_text, .The_main_choice, .upload-5, .page-5_Yourname::placeholder, .page-8_Name::placeholder, .page-8_Number::placeholder {
+  font-family: Monserat_lght;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+header {
+  width: 1280px;
+  height: 75px;
+  padding-left: 160px;
+  display: flex;
+  align-items: center;
+  background-image: url(../mg/header/Group\ 11.png);
+}
+
+.header_logo {
+  width: 120px;
+  height: 40px;
+  color: #402940;
+  display: flex;
+  margin-top: -4px;
+}
+
+.header_logo_k {
+  color: #847264;
+}
+
+a {
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  margin-left: 42px;
+  color: #402940;
+  width: 375px;
+  margin-top: -2px;
+}
+
+.nav__1 {
+  width: 45px;
+}
+
+.nav__2 {
+  margin-left: 29px;
+}
+
+.nav__3 {
+  margin-left: 5px;
+}
+
+.nav__4 {
+  margin-left: 28px;
+}
+
+.header_button {
+  width: 130px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #847264;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 463px;
+}
+.header_button:hover {
+  background-color: rgb(64, 41, 64);;
+}
+.header_button:active {
+  background-color: rgb(220, 220, 219);
+}
+
+main {
+  padding-left: 160px;
+  width: 1280px;
+}
+
+.mg_1 {
+  width: 640px;
+  height: 659px;
+  margin-left: 640px;
+  z-index: 1;
+  position: relative;
+}
+
+.page-1 {
+  width: 1120px;
+  height: 700px;
+  display: flex;
+  margin-top: -594px;
+}
+
+.page-1_infa {
+  width: 544px;
+  height: 291px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 232px;
+}
+
+.page-1_zagolovok {
+  width: 544px;
+  color: #402940;
+  margin-bottom: 23px;
+}
+
+.page-1_infa2 {
+  width: 544px;
+  color: #402940;
+  margin-bottom: 32px;
+}
+
+.page-1_buttom {
+  width: 130px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #847264;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 136px;
+}
+.page-1_buttom:hover {
+  background-color: rgb(64, 41, 64);;
+}
+.page-1_buttom:active {
+  background-color: rgb(220, 220, 219);
+}
+
+.page-1__img {
+  width: 544px;
+  height: 700px;
+  margin-left: 32px;
+  z-index: 2;
+  position: relative;
+}
+
+.page-2 {
+  margin-top: 96px;
+  width: 1120px;
+  height: 1190px;
+}
+
+.page-2_name {
+  display: flex;
+  justify-content: center;
+  color: #402940;
+  max-width: 100%;
+}
+
+.page-2_slow, .page-9_slow, .page-2_2 {
+  display: flex;
+  margin-top: 64px;
+  max-width: 100%;
+}
+
+.page-2__carta, .page-9_carta1, .page-2__carta2 , .page-9_carta2 {
+  background-image: url(../img/2/card\ \(1\).png);
+  width: 410px;
+  height: 520px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -18px;
+}
+
+.page-2__topic {
+  color: #402940;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 336px;
+  margin-left: -20px;
+}
+
+.page-2__but, .page-9_but {
+  width: 130px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #847264;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 136px;
+  margin-top: 31px;
+  margin-left: -23px;
+}
+.page-2__but:hover, .page-9_but:hover {
+  background-color:rgb(64, 41, 64);
+}
+.page-2__but:active, .page-9_but:active {
+  background-color: rgb(220, 220, 219);
+}
+
+.page_2__carta2 {
+  margin-left: -27px;
+}
+
+.page-2_2 {
+  margin-top: -19px;
+}
+
+.page-3 {
+  width: 1120px;
+  height: 499px;
+  margin-top: -3px;
+}
+
+.page-3_name {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #402940;
+}
+
+.page-3__gallery {
+  display: flex;
+}
+
+.page-3_carta, .carta_grass, .carta_box {
+  background-image: url(../img/3/heart.png);
+  width: 450px;
+  height: 430px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -51px;
+}
+
+.carta_headings {  /*заголовок*/
+  color: #402940;
+  width: 236px;
+  display: flex;
+  justify-content: center;
+  margin-top: 198px;
+  margin-left: 3px;
+  margin-bottom: 45px;
+}
+
+.carta_text {
+  color: #402940;
+  width: 288px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 4px;
+}
+
+.carta_box {
+  margin-top: 51px;
+  background-image: url(../img/3/box.png);
+  margin-left: -66px;
+}
+
+.page-3_box {
+  width: 300px;
+  margin-top: 201px;
+}
+
+.page-3_carta__box {
+  color: #402940;
+  width: 288px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 4px;
+}
+
+.carta_grass {
+  background-image: url(../img/3/trava.png);
+  margin-top: 20px;
+  margin-left: -66px;
+}
+
+.gr_z {   /*carta_headings*/
+  margin-top: 200px;
+  margin-left: -8px;
+}
+
+.gr {   /*page-3_carta__box*/
+  margin-top: -13px;
+  margin-left: 3px;
+}
+
+.page-4 {
+  background-image: url(../img/4/Rectangle\ 10.png);
+  margin-top: 139px;
+  width: 1120px;
+  height: 146px;
+}
+
+.page-4_name {
+  display: flex;
+  width: 1120px;
+}
+
+.page-4_text {
+  display: flex;
+  align-items: center;
+}
+
+.page-4_text1 {
+  width: 91px;
+  height: 83px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 134px;
+  margin-top: 33px;
+}
+
+.page-4_num {
+  color: #847264;
+  display: flex;
+  width: 91px;
+  justify-content: center;
+}
+
+.page-4_year {
+  color: #402940;
+  margin-top: 15px;
+  margin-left: 1px;
+  width: 91px;
+}
+
+.page-4_text2 {
+  width: 187px;
+  height: 83px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 39px;
+  margin-left: 235px;
+}
+
+.page-4_num2 {
+  width: 187px;
+  color: #847264;
+  display: flex;
+  justify-content: center;
+}
+
+.page-4_prodano, .page-4_client {   /*текст*/
+  color: #402940;
+}
+
+.page-4_text3 {                    /*текст*/
+  width: 172px;
+  height: 83px;
+  margin-left: 230px;
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-4_num3 {
+  width: 172px;
+  color: #847264;
+  display: flex;
+  justify-content: center;
+}
+
+.page-4_client {
+  width: 172px;
+}
+
+.page-5 {
+  margin-left: -160px;
+  background-image: url(../img/icon1/CTA\ \(photo\).png);
+  margin-top: 96px;
+  width: 1440px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-5_name {
+  color: #402940;
+  padding-top: 51.72px;
+  margin-left: 740px;
+  margin-bottom: 32px;
+}
+
+.page-5_Yourname, .page-8_Name, .page-8_Number {
+  width: 528px;
+  height: 59.75px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  margin-left: 762px;
+  padding-left: 14px;
+}
+.page-5_Yourname::-moz-placeholder, .page-8_Name::-moz-placeholder, .page-8_Number::-moz-placeholder {
+  color: #402940;
+}
+.page-5_Yourname::placeholder, .page-8_Name::placeholder, .page-8_Number::placeholder {
+  color: #402940;
+}
+
+.two-5 {
+  margin-top: 24px;
+}
+
+.upload-5 {
+  width: 518px;
+  height: 54px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #402940;
+  margin-left: 762px;
+  margin-top: 32px;
+}
+
+.page-5_up {
+  margin-top: 20px;
+}
+
+.page-5_img {
+  margin-top: 21px;
+  margin-left: 15px;
+  margin-right: 7px;
+  width: 14px;
+  height: 14px;
+}
+
+.page-5_but {
+  width: 130px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #847264;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 106px;
+  margin-top: 32px;
+  margin-left: 760px;
+}
+.page-5_but:hover {
+  background-color: rgb(64, 41, 64);;
+}
+.page-5_but:active {
+  background-color: rgb(220, 220, 219);
+}
+
+.page-6 {
+  width: 1119px;
+}
+
+.page-6_name {
+  color: #402940;
+  display: flex;
+  justify-content: center;
+  width: 1140px;
+  margin-top: 93px;
+}
+
+.page-6_spisok {
+  display: flex;
+}
+
+.page-6_spisok1, .page-6_spisok4, .page-6_spisok3, .page-6_spisok2 {
+  background-image: url(../img/icon2/card1.png);
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  height: 345px;
+  margin-top: 19px;
+  align-items: center;
+}
+
+.page-6_zakaz {  /*первый*/
+  width: 192px;
+  height: 28px;
+  color: #402940;
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+}
+
+.page-6_zakaz2 {
+  width: 192px;
+  height: 78px;
+  color: #402940;
+  display: flex;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.page-6_spisok2 {
+  background-image: url(../img/icon2/card2.png);
+  margin-left: 21px;
+}
+
+.page-6_spisok3 {
+  margin-left: 21px;
+  background-image: url(../img/icon2/card3.png);
+}
+
+.page-6_spisok4 {
+  margin-left: 21px;
+  background-image: url(../img/icon2/card4.png);
+}
+
+.continue-6 {
+  margin-top: 18px;
+}
+
+.page-7_name {
+  width: 1120px;
+  display: flex;
+  justify-content: center;
+  color: #402940;
+  margin-top: 79px;
+}
+
+.page-7_spisok {
+  display: flex;
+  margin-top: 20px;
+}
+
+.page-7_spisok1 {
+  background-image: url(../img/7/card\ 4.png);
+  width: 380px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  margin-left: -100px;
+}
+
+.page-7_spisok2 {
+  display: flex;
+  width: 310px;
+  margin-top: 150px;
+  color: #280901;
+  justify-content: center;
+  text-align: center;
+  margin-left: 65px;
+}
+
+.page-7_people {
+  color: #402940;
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  margin-top: 71px;
+}
+
+.two-7 {                               /*page-7_spisok1*/
+  margin-left: 32px;
+}
+
+.page-8 {
+  margin-left: -160px;
+  background-image: url(../img/8/CTA\ \(choose\).png);
+  width: 1440px;
+  height: 350px;
+  margin-top: 76px;
+  padding-top: 364px;
+}
+
+.page-8_zagolovok1 {
+  color: #402940;
+  margin-left: 160px;
+  margin-top: -290px;
+}
+
+.page-8_zagolovok2 {
+  color: #402940;
+  margin-left: 160px;
+}
+
+.page-8__slow {   /*регистрация*/
+  display: flex;
+  flex-direction: column;
+}
+
+.page-8_zakaz {
+  color: #402940;
+  margin-top: 32px;
+  margin-left: 160px;
+}
+
+.page-8_Name, .page-8_Number {
+  margin-left: 160px;
+  margin-top: 32px;
+}
+
+.page-8_Number {
+  margin-top: 32px;
+}
+
+.four-8 {  /*page-8_Number*/
+  padding-top: 5px;
+}
+
+.choice {
+  position: relative;
+  width: 544px; 
+  margin-left: 160px;
+  margin-top: 23px;
+  height: 62px;
+}
+
+.The_main_choice {
+  width: 100%; /* Занимает всю ширину контейнера */
+  padding: 12px 16px;
+  color: #402940;
+  background-color: white;
+  cursor: pointer;
+  -moz-appearance: none;  /*для отображения элемента*/
+  appearance: none;
+  -webkit-appearance: none; /*для того же эффекта*/
+  outline: none;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.The_black_Arrow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%); /*перемещение элемента по указанной оси*/
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #000000; /*стрелка*/
+  pointer-events: none;
+}
+
+.The_main_choice option {
+  background-color: #402940;/*В списке прозрачность не нужна*/
+  color: #000;
+}
+
+.page-8_but {
+  width: 130px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #847264;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer; /*курсор в виде руки*/
+  text-decoration: none;
+  margin-left: 160px;
+  margin-top: 32px;
+  width: 106px;
+}
+.page-8_but:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.page-8_but:active {
+  background-color: rgba(64, 41, 64, 0.25);
+}
+
+.page-9_name {
+  color: #402940;
+  margin-left: 455px;
+  margin-top: 147px;
+}
+
+.page-9_carta_text {
+  color: #280901;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 319px;
+  margin-left: -20px;
+  text-align: center;
+  width: 300px;
+}
+
+.page-9_but {
+  margin-top: 19px;
+}
+
+.page-10 {
+  background-image: url(../img/10/Contact\ Details\ \(1\).png);
+  margin-left: -160px;
+  width: 1440px;
+  height: 537.26px;
+  margin-top: 47px;
+  padding-top: 127px;
+}
+
+.page-10_zagolovok1, .page-10_zagolovok2, .page-10_zagolovok3 {
+  width: 376px;
+  margin-left: 160px;
+  color: #402940;
+}
+
+.page-10_zagolovok2 {
+  margin-top: 31px;
+}
+
+.page-10_zagolovok3 {
+  margin-top: 30px;
+}
+
+.page-10_text1, .page-10_text2, .page-10_text3 {
+  color: #402940;
+  width: 376px;
+  margin-left: 160px;
+  margin-bottom: -20px;
+}
+
+.page-10_text1 {
+  margin-top: 33px;
+}
+
+.page-10_text2 {
+  margin-top: 34px;
+  width: 144px;
+}
+
+.page-10_text3 {
+  margin-top: 33px;
+}
+
+.page-10_img {
+  width: 128px;
+  margin-left: 160px;
+  margin-top: 30px;
+}
+
+.page-11 {
+  background-image: url(../img/11/Frame\ 16.png);
+  width: 1070px;
+  height: 263px;
+  margin-top: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  margin-bottom: 95px;
+}
+
+.page-11_name {
+  width: 255px;
+  height: 40px;
+  color: #FFFFFF;
+}
+
+.page-11_description {
+  color: #FFFFFF;
+  display: flex;
+  text-align: center;
+  margin-top: 18px;
+  width: 400px;
+}
+
+.page-11_but {
+  width: 130px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 120px;
+  margin-top: 18px;
+}
+.page-11_but:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.page-11_but:active {
+  background-color: rgba(64, 41, 64, 0.25);
+}
+
+
+
+
+footer {
+  background-color: rgba(220, 220, 219, 0.1);
+  width: 1440px;
+  height: 309px;
+  padding-top: 103px;
+  display: flex;
+  gap: 12px;
+}
+
+.foter_part1 {
+  margin-left: 160px;
+  width: 219px;
+}
+
+.page-footer_text {
+  width: 269px;
+  margin-top: 14px;
+}
+
+.foter_g2 {
+  display: flex;
+  flex-direction: column; /* элементы располагаются вертикально в контейнере*/
+  margin-left: 20px;
+  width: 253px;
+  height: 146px;
+  margin-left: 73px;
+  margin-top: 2px;
+}
+
+.page-footer_zagolovok {
+  width: 170px;
+  color: #402940;
+}
+
+.page-footer_text1 {
+  width: 150px;
+  color: #402940;
+  margin-top: 28px;
+}
+
+.page-footer_text2 {
+  width: 150px;
+  margin-top: 16px;
+  color: #402940;
+}
+
+.page-footer_text3 {
+  width: 150px;
+  margin-top: 15px;
+  color: #402940;
+}
+
+.footer_two {
+  margin-left: 117px;
+}
+
+.footer_social-network {
+  color: #402940;
+  margin-top: 2px;
+  margin-left: 118px;
+}
+
+.footer_emoji {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_img {
+  margin-top: 27px;
+  margin-left: 117px;
+  width: 131px;
+  height: 32px;
+}
+
+.footer_rights {
+  background-color: rgba(220, 220, 219, 0.5);
+  width: 1440px;
+  height: 70px;
+  margin-top: 98px;
+  color: #402940;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-footer2 {
+  display: flex;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*адаптив*/
+@media (max-width: 390px) {
+  * {
+    width: 390px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    padding-left: 0;
+    align-items: center;
+    width: 390px;
+    background-color: rgba(192, 113, 46, 0.1);
+  }
+  .header_logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header_logo_k {
+    width: 22px;
+  }
+  .nav {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .header_button {
+    margin-left: 0;
+  }
+  main {
+    padding-left: 0px;
+    width: 390px;
+  }
+  .mg_1 {
+    width: 390px;
+    display: flex;
+    text-align: center;
+    margin-left: 0;
+  }
+  .page-1 {
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-1_infa {
+    width: 390px;
+    margin-top: 0px;
+    display: flex;
+    text-align: center;
+    height: 370px;
+    z-index: 2;
+  }
+  .page-1_zagolovok {
+    width: 390px;
+  }
+  .page-1_infa2 {
+    text-align: center;
+    width: 390px;
+  }
+  .page-1_buttom {
+    width: 130px;
+    margin-left: 130px;
+  }
+  .page-1__img {
+    margin-top: -433px;
+    z-index: 0;
+    width: 390px;
+    margin-left: 0;
+    height: 531px;
+    opacity: 0.8;
+  }
+  .page-2 {
+    width: 390px;
+    margin-top: -238px;
+  }
+  .page-2_name {
+    text-align: center;
+  }
+  .page-2_slow, .page-2_2, .page-9_slow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .page-2__carta, .page_2__carta2, .page-9_carta1, .page-2__topic, .page-2__carta2, .page-9_carta2 {
+    width: 390px;
+  }
+  .page-2_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-3 {
+    margin-top: 2080px;
+    width: 390px;
+    height: 1200px;
+  }
+  .page-3__gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-3_carta, .carta_box, .carta_grass {
+    width: 390px;
+    
+  }
+  .carta_headings {
+    width: 390px;
+    display: flex;
+    text-align: center;
+    margin-left: 0;
+    justify-content: center;
+    margin-left: 34px;
+  }
+  .carta_text {
+    width: 390px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+  }
+  .page-3_box {
+    width: 390px;
+    display: flex;
+    margin-left: 50px;
+  }
+  .page-3_carta__box {
+    width: 288px;
+    margin-left: 59px;
+  }
+  .gr_z {
+    margin-left: 55px;
+  }
+  .gr {
+    margin-left: 60px;
+  }
+  .page-4 {
+    margin-top: 235px;
+    width: 390px;
+    height: 147px;
+  }
+  .page-4_name {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-4_text1, .page-4_text2, .page-4_text3 {
+    margin-left: 0;
+  }
+  .page-4_text1 {
+    margin-top: 20px;
+  }
+  .page-4_text2 {
+    margin-top: -70px;
+    margin-left: 90px;
+  }
+  .page-4_text3{
+    margin-top: -99px;
+    margin-left: 210px;
+  }
+  .page-4_prodano {
+    width: 220px;
+  }
+  .page-5 {
+    width: 390px;
+    box-sizing: border-box;
+    margin-top: 34px;
+    margin-left: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)), url(../img/icon1/CTA\ \(photo\).png);
+    height: 559px;
+  }
+  .page-5_name {
+    margin-left: 6px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    width: 384px;
+  }
+  .page-5_Yourname, .page-8_Name, .page-8_Number {
+    margin-left: 0;
+    width: 375px;
+  }
+  .upload-5 {
+    margin-left: 0;
+    width: 390px;
+  }
+  .page-5_but {
+    margin-left: 25px;
+  }
+  .page-6 {
+    width: 390px;
+    margin-top: -72px;
+  }
+  .page-6_name {
+    width: 390px;
+    /* display: flex; */
+    text-align: center;
+  }
+  .page-6_spisok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-6_spisok2, .page-6_spisok3, .page-6_spisok4 {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .page-7_name {
+    width: 390px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .page-7_spisok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+  }
+  .page-7_people{
+    width: 380px;
+  }
+  .two-7 {
+    margin-left: 0;
+  }
+  .page-7_spisok1 {
+    height: 434px;
+  }
+  .page-8 {
+    margin-left: 0;
+    margin-top: 0px;
+    width: 390px;
+    padding-top: 350px;
+  }
+  .page-8_zagolovok1, .page-8_zagolovok2 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .page-8_zakaz {
+    margin-left: 0;
+    width: 390px;
+    text-align: center;
+    margin-top: 0;
+  }
+  .choice {
+    margin-left: 0;
+    width: 390px;
+  }
+  .page-8_but {
+    margin-left: 137px;
+    margin-top: 10px;
+  }
+  .page-9_name {
+    margin-left: 0;
+    text-align: center;
+  }
+  .page-10 {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+    width: 390px;
+  }
+  .page-10_zagolovok1, .page-10_zagolovok2, .page-10_zagolovok3 {
+    width: 376px;
+    margin-left: 0px;
+    color: #402940;
+  }
+  .page-10_text1, .page-10_text2, .page-10_text3 {
+    text-align: center;
+    width: 390px;
+    margin-left: 0px;
+  }
+  .page-10_img {
+    margin-left: 115px;
+  }
+  .page-11, .page-11_description {
+    width: 390px;
+  }
+  .page-11 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  footer {
+    width: 390px;
+    padding-top: 40px;
+    height: 665px;
+  }
+  .foter_part1 {
+    width: 390px;
+    margin-left: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-footerN2 {
+    width: 390px;
+    margin-left: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .page-footer_text1, .page-footer_text2, .page-footer_text3 {
+    margin-top: 10px;
+  }
+  .page-footer2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-footer_text {
+    margin-top: -20px;
+  }
+  .footer_social-network {
+    margin-left: 0;
+    text-align: center;
+  }
+  .footer_img {
+    margin-left: 130px;
+  }
+  .footer_rights {
+    width: 390px;
+  }
+}
